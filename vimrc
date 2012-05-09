@@ -21,12 +21,14 @@ autocmd BufRead *\.markdown,*\.md,*\.txt setlocal smartindent
 autocmd BufRead *\.markdown,*\.md,*\.txt nnoremap <leader>sp :setlocal spell! spelllang=en_gb<cr>
 
 " Load colorscheme
+let g:zenburn_high_Contrast=1
 colors zenburn
+set transparency=5
 
 " Lose the GUI
 if has("gui_running")
     set guioptions=egmrt
-    set guifont=Menlo:h12
+    set guifont=Monaco:h12
 endif
 
 " Show line numbers
