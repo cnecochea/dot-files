@@ -40,6 +40,8 @@ alias gg="git grep --color -n $1"
 alias gch="git checkout $1"
 alias gpr="git pull --rebase"
 alias gpoh="git push origin HEAD"
+alias gst="git status"
+alias gbl="git for-each-ref --count=30 --sort=-committerdate refs/heads/ --format='%(refname:short)'"
 
 # only set vim to mvim if we're actually on OS X
 [[ `uname -a` =~ "Darwin" ]] && alias vim="mvim"
