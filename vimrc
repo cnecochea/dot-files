@@ -61,6 +61,14 @@ set hidden
 set ignorecase 
 set smartcase
 
+" prevent editor from locking up on long lines
+set synmaxcol=5000
+
+" add ctrlp
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+
 " map leader to ,
 let mapleader = ","
 let maplocalleader="\\"
