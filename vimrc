@@ -109,6 +109,9 @@ augroup END
 au BufRead,BufNewFile *.thrift set filetype=thrift
 au! Syntax thrift source ~/.vim/bundle/thrift/thrift.vim
 
+" Set file type for .ejs
+au BufNewFile,BufRead *.ejs set filetype=html
+
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
