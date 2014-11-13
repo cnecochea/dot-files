@@ -23,12 +23,14 @@ autocmd BufRead *\.markdown,*\.md,*\.txt nnoremap <leader>sp :setlocal spell! sp
 " Load colorscheme
 let g:zenburn_high_Contrast=1
 colors zenburn
-set transparency=5
 
 " Lose the GUI
 if has("gui_running")
     set guioptions=egmrt
     set guifont=Monaco:h12
+    "set guifont=Source_Code_Pro:h13
+    set guioptions-=r
+    set transparency=5
 endif
 
 " Show line numbers
