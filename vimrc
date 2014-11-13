@@ -91,6 +91,9 @@ let g:CommandTMaxHeight=15
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
+" Map lowercase s for surround in visual mode
+vmap s S
+
 " In many terminal emulators the mouse works just fine, thus enable it.
 if has('mouse')
   set mouse=a
